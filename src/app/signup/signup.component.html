@@ -1,0 +1,48 @@
+
+<div class="card-title text-center">
+<h2>SignUp form</h2>  
+</div>
+  
+<form [formGroup]="form" #AdminInformation (ngSubmit)="AdminForm(AdminInformation)">  
+  
+  <div class="row">  
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="fullName"> Name </label>  
+        <input formControlName="fullName" placeholder="Full Name" class="form-control" type="text">   
+    </div>  
+  </div>  
+  
+  <div class="row">  
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="email"> Email </label>  
+        <input formControlName="email" placeholder="Email" class="form-control" type="text">   
+    </div>  
+  </div>  
+  
+  <div class="row">  
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="password"> Password </label>  
+        <input formControlName="password" placeholder="Password" class="form-control" type="password">   
+    </div>  
+  </div>  
+  
+  <div class="row">  
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="confirmPassword"> Confirm Password </label>  
+        <input formControlName="confirmPassword" placeholder="Confirm Password" class="form-control" type="password">   
+    </div>  
+  </div>  
+  
+  <div class="row">  
+    <div class=" col-md-offset-1 col-md-4">  
+        <label for="role"> Role </label>  
+        <input formControlName="role" placeholder="Role" class="form-control" type="text">   
+    </div>  
+  </div>  
+  
+  <div class="row" style="margin-top: 40px;">  
+    <div class="col-md-offset-1 col-md-4">  
+        <button class="btn btn-md btn-info btn-style"  >Save</button>  
+    </div>  
+  </div> 
+</form>  

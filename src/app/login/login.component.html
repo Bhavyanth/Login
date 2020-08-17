@@ -1,0 +1,27 @@
+<div class="card-title text-center">
+    <h2>Login form</h2>  
+    </div>
+
+    <form [formGroup]="form" #LoginInformation (ngSubmit)="Login(LoginInformation)">  
+  
+        <div class="row">  
+          <div class=" col-md-offset-1 col-md-4">  
+              <label for="email"> Email </label>  
+              <input formControlName="email" placeholder="Email" class="form-control" type="text">   
+          </div>  
+        </div>  
+        
+        <div class="row">  
+          <div class=" col-md-offset-1 col-md-4">  
+              <label for="password"> Password </label>  
+              <input formControlName="password" placeholder="Password" class="form-control" type="password">   
+          </div>  
+        </div>  
+        
+        <div class="row" style="margin-top: 40px;">  
+          <div class="col-md-offset-1 col-md-4">  
+              <button class="btn btn-md btn-info btn-style"  >Login</button>  
+          </div>  
+        </div>  
+        
+      </form>  
